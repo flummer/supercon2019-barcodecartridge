@@ -1,13 +1,14 @@
 EESchema Schematic File Version 4
+LIBS:BarcodeCartridge-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Supercon 2019 Badge Cartridge Template"
+Title "Barcode Cartridge for the Supercon 2019 Badge"
 Date ""
 Rev ""
-Comp "Template designed by: @thomasflummer"
+Comp "Designed by: @thomasflummer"
 Comment1 "License: CC-BY-SA"
 Comment2 ""
 Comment3 ""
@@ -222,4 +223,467 @@ Wire Wire Line
 	2000 1150 2000 1200
 Wire Wire Line
 	2000 1500 2000 1550
+$Comp
+L SuperconCartridge:GM65-S M1
+U 1 1 5DB46BDF
+P 3300 3100
+F 0 "M1" H 3300 3250 50  0000 C CNN
+F 1 "GM65-S" H 3300 2950 50  0000 C CNN
+F 2 "SuperconCartridge:SD-52892-044" H 3300 3100 50  0001 C CNN
+F 3 "" H 3300 3100 50  0001 C CNN
+	1    3300 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5DB4AFEF
+P 3300 3750
+F 0 "#PWR010" H 3300 3500 50  0001 C CNN
+F 1 "GND" V 3305 3622 50  0000 R CNN
+F 2 "" H 3300 3750 50  0001 C CNN
+F 3 "" H 3300 3750 50  0001 C CNN
+	1    3300 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 3750 2750 2    50   Input ~ 0
+GENIO1
+Text GLabel 3750 2850 2    50   Input ~ 0
+GENIO2
+Text GLabel 2850 2750 0    50   Input ~ 0
+GENIO3
+Text GLabel 3750 3150 2    50   Input ~ 0
+GENIO4
+Wire Wire Line
+	3300 2450 3300 2550
+Wire Wire Line
+	3300 3650 3300 3750
+$Comp
+L device:C C2
+U 1 1 5DB4C708
+P 3300 5400
+F 0 "C2" H 3415 5446 50  0000 L CNN
+F 1 "0.1uF" H 3415 5355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3338 5250 50  0001 C CNN
+F 3 "~" H 3300 5400 50  0001 C CNN
+	1    3300 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R1
+U 1 1 5DB4D39D
+P 3300 4900
+F 0 "R1" H 3370 4946 50  0000 L CNN
+F 1 "4.7k" H 3370 4855 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 4900 50  0001 C CNN
+F 3 "~" H 3300 4900 50  0001 C CNN
+	1    3300 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5DB4EB53
+P 3800 5150
+F 0 "SW1" H 3800 5435 50  0000 C CNN
+F 1 "SW_Push" H 3800 5344 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 3800 5350 50  0001 C CNN
+F 3 "~" H 3800 5350 50  0001 C CNN
+	1    3800 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5DB50383
+P 3300 5650
+F 0 "#PWR012" H 3300 5400 50  0001 C CNN
+F 1 "GND" V 3305 5522 50  0000 R CNN
+F 2 "" H 3300 5650 50  0001 C CNN
+F 3 "" H 3300 5650 50  0001 C CNN
+	1    3300 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5DB50AE7
+P 4100 5250
+F 0 "#PWR013" H 4100 5000 50  0001 C CNN
+F 1 "GND" V 4105 5122 50  0000 R CNN
+F 2 "" H 4100 5250 50  0001 C CNN
+F 3 "" H 4100 5250 50  0001 C CNN
+	1    4100 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5150 4100 5150
+Wire Wire Line
+	4100 5150 4100 5250
+Wire Wire Line
+	3300 5150 3300 5050
+Wire Wire Line
+	3300 5250 3300 5150
+Connection ~ 3300 5150
+Wire Wire Line
+	3300 5550 3300 5650
+Wire Wire Line
+	3300 4750 3300 4650
+Text GLabel 3050 5150 0    50   Input ~ 0
+GENIO3
+Wire Wire Line
+	3050 5150 3300 5150
+Wire Wire Line
+	3300 5150 3600 5150
+$Comp
+L dk_USB-DVI-HDMI-Connectors:10103594-0001LF J2
+U 1 1 5DB539D9
+P 6900 4200
+F 0 "J2" H 6914 4923 50  0000 C CNN
+F 1 "10103594-0001LF" H 6914 4832 50  0000 C CNN
+F 2 "digikey-footprints:USB_Micro_B_Female_10103594-0001LF" H 7100 4400 60  0001 L CNN
+F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/10103594.pdf" H 7100 4500 60  0001 L CNN
+F 4 "609-4050-1-ND" H 7100 4600 60  0001 L CNN "Digi-Key_PN"
+F 5 "10103594-0001LF" H 7100 4700 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 7100 4800 60  0001 L CNN "Category"
+F 7 "USB, DVI, HDMI Connectors" H 7100 4900 60  0001 L CNN "Family"
+F 8 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/10103594.pdf" H 7100 5000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/amphenol-icc-fci/10103594-0001LF/609-4050-1-ND/2350357" H 7100 5100 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN RCPT USB2.0 MICRO B SMD R/A" H 7100 5200 60  0001 L CNN "Description"
+F 11 "Amphenol ICC (FCI)" H 7100 5300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7100 5400 60  0001 L CNN "Status"
+	1    6900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5DB550DD
+P 6750 4900
+F 0 "#PWR014" H 6750 4650 50  0001 C CNN
+F 1 "GND" V 6755 4772 50  0000 R CNN
+F 2 "" H 6750 4900 50  0001 C CNN
+F 3 "" H 6750 4900 50  0001 C CNN
+	1    6750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 5DB55886
+P 7250 4900
+F 0 "#PWR015" H 7250 4650 50  0001 C CNN
+F 1 "GND" V 7255 4772 50  0000 R CNN
+F 2 "" H 7250 4900 50  0001 C CNN
+F 3 "" H 7250 4900 50  0001 C CNN
+	1    7250 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4300 7250 4300
+Wire Wire Line
+	7250 4300 7250 4400
+Wire Wire Line
+	6750 4800 6750 4900
+Wire Wire Line
+	7150 4400 7250 4400
+Connection ~ 7250 4400
+Wire Wire Line
+	7250 4400 7250 4900
+Text GLabel 7150 4100 2    50   Input ~ 0
+D-
+Text GLabel 7150 4200 2    50   Input ~ 0
+D+
+$Comp
+L device:R R2
+U 1 1 5DB583FD
+P 4200 3350
+F 0 "R2" V 3993 3350 50  0000 C CNN
+F 1 "22" V 4084 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4130 3350 50  0001 C CNN
+F 3 "~" H 4200 3350 50  0001 C CNN
+	1    4200 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R3
+U 1 1 5DB58D53
+P 4550 3450
+F 0 "R3" V 4343 3450 50  0000 C CNN
+F 1 "22" V 4434 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4480 3450 50  0001 C CNN
+F 3 "~" H 4550 3450 50  0001 C CNN
+	1    4550 3450
+	0    1    1    0   
+$EndComp
+Text GLabel 4900 3350 2    50   Input ~ 0
+D-
+Text GLabel 4900 3450 2    50   Input ~ 0
+D+
+Wire Wire Line
+	3750 3350 4050 3350
+Wire Wire Line
+	4350 3350 4900 3350
+Wire Wire Line
+	3750 3450 4400 3450
+Wire Wire Line
+	4700 3450 4900 3450
+Text GLabel 7150 4000 2    50   Input ~ 0
+VUSB
+$Comp
+L dk_PMIC-Voltage-Regulators-Linear:LP2985-33DBVR U2
+U 1 1 5DB6F4CB
+P 7650 1450
+F 0 "U2" H 7650 1953 60  0000 C CNN
+F 1 "LP2985-33DBVR" H 7650 1847 60  0000 C CNN
+F 2 "digikey-footprints:SOT-753" H 7850 1650 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flp2985" H 7850 1750 60  0001 L CNN
+F 4 "296-18476-1-ND" H 7850 1850 60  0001 L CNN "Digi-Key_PN"
+F 5 "LP2985-33DBVR" H 7850 1950 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 7850 2050 60  0001 L CNN "Category"
+F 7 "PMIC - Voltage Regulators - Linear" H 7850 2150 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flp2985" H 7850 2250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/LP2985-33DBVR/296-18476-1-ND/809911" H 7850 2350 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC REG LINEAR 3.3V 150MA SOT23-5" H 7850 2450 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 7850 2550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7850 2650 60  0001 L CNN "Status"
+	1    7650 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SeeedOPL-Transistor-2016:SMD-MOSFET-N-CH-20V-2.1A-CJ2302_SOT-23_ Q1
+U 1 1 5DB72614
+P 9000 2300
+F 0 "Q1" H 9115 2342 45  0000 L CNN
+F 1 "SMD-MOSFET-N-CH-20V-2.1A-CJ2302_SOT-23_" H 9115 2258 45  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 9000 2300 50  0001 C CNN
+F 3 "" H 9000 2300 50  0001 C CNN
+F 4 "CJ2302" H 9030 2450 20  0001 C CNN "MPN"
+F 5 "305030015" H 9030 2450 20  0001 C CNN "SKU"
+	1    9000 2300
+	1    0    0    1   
+$EndComp
+$Comp
+L SeeedOPL-Transistor-2016:SMD-MOSFET-P-CH-8V-4.1A-CJ2305_SOT-23_ Q2
+U 1 1 5DB7408F
+P 9000 2900
+F 0 "Q2" H 9114 2942 45  0000 L CNN
+F 1 "SMD-MOSFET-P-CH-8V-4.1A-CJ2305_SOT-23_" H 9114 2858 45  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 9000 2900 50  0001 C CNN
+F 3 "" H 9000 2900 50  0001 C CNN
+F 4 "CJ2305" H 9030 3050 20  0001 C CNN "MPN"
+F 5 "305030014" H 9030 3050 20  0001 C CNN "SKU"
+	1    9000 2900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9000 2500 9000 2600
+$Comp
+L device:R R4
+U 1 1 5DB78ED9
+P 8600 2600
+F 0 "R4" H 8670 2646 50  0000 L CNN
+F 1 "4.7k" H 8670 2555 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8530 2600 50  0001 C CNN
+F 3 "~" H 8600 2600 50  0001 C CNN
+	1    8600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R5
+U 1 1 5DB79C7D
+P 8600 3200
+F 0 "R5" H 8670 3246 50  0000 L CNN
+F 1 "6.8k" H 8670 3155 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8530 3200 50  0001 C CNN
+F 3 "~" H 8600 3200 50  0001 C CNN
+	1    8600 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 2300 8600 2300
+Wire Wire Line
+	8600 2300 8600 2450
+Wire Wire Line
+	8600 2750 8600 2900
+Wire Wire Line
+	8800 2900 8600 2900
+Connection ~ 8600 2900
+Wire Wire Line
+	8600 2900 8600 3050
+$Comp
+L power:+3V3 #PWR019
+U 1 1 5DB7C1FE
+P 9250 3300
+F 0 "#PWR019" H 9250 3150 50  0001 C CNN
+F 1 "+3V3" H 9265 3473 50  0000 C CNN
+F 2 "" H 9250 3300 50  0001 C CNN
+F 3 "" H 9250 3300 50  0001 C CNN
+	1    9250 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5DB7D161
+P 8600 3500
+F 0 "#PWR017" H 8600 3250 50  0001 C CNN
+F 1 "GND" V 8605 3372 50  0000 R CNN
+F 2 "" H 8600 3500 50  0001 C CNN
+F 3 "" H 8600 3500 50  0001 C CNN
+	1    8600 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 3350 8600 3500
+Wire Wire Line
+	9000 3100 9000 3400
+Wire Wire Line
+	9000 3400 9250 3400
+Wire Wire Line
+	9250 3400 9250 3300
+$Comp
+L device:C C4
+U 1 1 5DB802BC
+P 8150 1750
+F 0 "C4" H 8265 1796 50  0000 L CNN
+F 1 "0.1uF" H 8265 1705 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8188 1600 50  0001 C CNN
+F 3 "~" H 8150 1750 50  0001 C CNN
+	1    8150 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1550 8150 1550
+Wire Wire Line
+	8150 1550 8150 1600
+$Comp
+L power:GND #PWR016
+U 1 1 5DB81241
+P 7650 2000
+F 0 "#PWR016" H 7650 1750 50  0001 C CNN
+F 1 "GND" V 7655 1872 50  0000 R CNN
+F 2 "" H 7650 2000 50  0001 C CNN
+F 3 "" H 7650 2000 50  0001 C CNN
+	1    7650 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 1900 8150 1950
+Wire Wire Line
+	9000 1450 9000 2100
+Wire Wire Line
+	6700 2300 6700 1450
+Wire Wire Line
+	7750 1100 7750 1150
+Connection ~ 6700 1450
+Wire Wire Line
+	6700 1450 6700 1100
+Text GLabel 6550 1450 0    50   Input ~ 0
+VUSB
+Wire Wire Line
+	6700 1450 6550 1450
+$Comp
+L power:VCC #PWR09
+U 1 1 5DB905A7
+P 3300 2450
+F 0 "#PWR09" H 3300 2300 50  0001 C CNN
+F 1 "VCC" H 3317 2623 50  0000 C CNN
+F 2 "" H 3300 2450 50  0001 C CNN
+F 3 "" H 3300 2450 50  0001 C CNN
+	1    3300 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR011
+U 1 1 5DB90F19
+P 3300 4650
+F 0 "#PWR011" H 3300 4500 50  0001 C CNN
+F 1 "VCC" H 3317 4823 50  0000 C CNN
+F 2 "" H 3300 4650 50  0001 C CNN
+F 3 "" H 3300 4650 50  0001 C CNN
+	1    3300 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR018
+U 1 1 5DB912FB
+P 9200 2600
+F 0 "#PWR018" H 9200 2450 50  0001 C CNN
+F 1 "VCC" V 9217 2728 50  0000 L CNN
+F 2 "" H 9200 2600 50  0001 C CNN
+F 3 "" H 9200 2600 50  0001 C CNN
+	1    9200 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9200 2600 9000 2600
+Connection ~ 9000 2600
+Wire Wire Line
+	9000 2600 9000 2700
+Wire Wire Line
+	8050 1450 8600 1450
+Wire Wire Line
+	6700 2300 8600 2300
+Connection ~ 8600 2300
+Wire Wire Line
+	6700 1100 7750 1100
+Wire Wire Line
+	6700 1450 6950 1450
+$Comp
+L device:C C5
+U 1 1 5DB9B94F
+P 8600 1750
+F 0 "C5" H 8715 1796 50  0000 L CNN
+F 1 "2.2uF" H 8715 1705 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8638 1600 50  0001 C CNN
+F 3 "~" H 8600 1750 50  0001 C CNN
+	1    8600 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C3
+U 1 1 5DB9BF71
+P 6950 1750
+F 0 "C3" H 7065 1796 50  0000 L CNN
+F 1 "1uF" H 7065 1705 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6988 1600 50  0001 C CNN
+F 3 "~" H 6950 1750 50  0001 C CNN
+	1    6950 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 1900 8600 1950
+Wire Wire Line
+	8600 1950 8150 1950
+Connection ~ 8150 1950
+Wire Wire Line
+	7650 1950 8150 1950
+Wire Wire Line
+	7650 1750 7650 1950
+Wire Wire Line
+	7650 1950 6950 1950
+Wire Wire Line
+	6950 1950 6950 1900
+Connection ~ 7650 1950
+Wire Wire Line
+	7650 1950 7650 2000
+Wire Wire Line
+	8600 1600 8600 1450
+Connection ~ 8600 1450
+Wire Wire Line
+	8600 1450 9000 1450
+Wire Wire Line
+	6950 1600 6950 1450
+Connection ~ 6950 1450
+Wire Wire Line
+	6950 1450 7250 1450
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5DBD96C9
+P 4250 2900
+F 0 "TP1" H 4308 3018 50  0000 L CNN
+F 1 "Buzzer" H 4308 2927 50  0000 L CNN
+F 2 "Connectors_TestPoints:Test_Point_Pad_d2.0mm" H 4450 2900 50  0001 C CNN
+F 3 "~" H 4450 2900 50  0001 C CNN
+	1    4250 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2900 4250 3050
+Wire Wire Line
+	4250 3050 3750 3050
 $EndSCHEMATC

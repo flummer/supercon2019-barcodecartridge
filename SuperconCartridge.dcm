@@ -1,5 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP GM65-S
+D 1D and 2D barcode reader module
+$ENDCMP
+#
 $CMP W25Q128
 D External EEPROM with SPI interface in 8-pin package
 K EEPROM memory SPI serial

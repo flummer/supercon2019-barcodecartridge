@@ -1,3 +1,6 @@
 (sym_lib_table
   (lib (name SuperconCartridge)(type Legacy)(uri ${KIPRJMOD}/SuperconCartridge.lib)(options "")(descr ""))
+  (lib (name dk_USB-DVI-HDMI-Connectors)(type Legacy)(uri "/Users/tf/Documents/Libraries/DigiKey KiCad Library/digikey-symbols/dk_USB-DVI-HDMI-Connectors.lib")(options "")(descr ""))
+  (lib (name dk_PMIC-Voltage-Regulators-Linear)(type Legacy)(uri "/Users/tf/Documents/Libraries/DigiKey KiCad Library/digikey-symbols/dk_PMIC-Voltage-Regulators-Linear.lib")(options "")(descr ""))
+  (lib (name SeeedOPL-Transistor-2016)(type Legacy)(uri /Users/tf/Documents/Libraries/SeeedOPL_KiCad/SeeedOPL-Transistor-2016.lib)(options "")(descr ""))
 )
