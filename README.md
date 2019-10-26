@@ -1,13 +1,6 @@
-# Unofficial KiCad template for a 2019 Hackaday Superconference Badge Cartridge
+# Barcode reader Cartridge for the 2019 Hackaday Superconference Badge
 
-![Cartridge template render](https://raw.githubusercontent.com/flummer/supercon2019-cartridgetemplate/master/IMAGES/front_back_render.png "Cartridge template render")
-
-This template can be used as a starting point to make a cartridge for the Supercon badge, that will mate with the 40 pin expansion connector on the back of the badge.
-
-| WARNING: This design is unofficial, and has NOT been tested |
-| --- |
-
-It's using an angled 2x20 pin male header, a w25q128 SPI flash and a 100nF cap. The schematic has the pins named using global nets, so it's easy to simply add in your own stuff.
+This is designed to use the GM65 barcode reader module, that supports both 1D and 2D barcodes and is able to read from a screen (eg. a smartphone or the screen on the badge)
 
 ## License
 
